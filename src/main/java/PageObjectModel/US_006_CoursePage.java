@@ -43,11 +43,11 @@ public class US_006_CoursePage {
     public WebElement healthandExercicesSciencesText;
 
     //Foreign Language text locator
-    @FindBy (xpath = "//*[text()='Foreign Language`]")
+    @FindBy (xpath = "//*[text()='Foreign Language']")
     public WebElement foreignLanguageText;
 
     //Computer Science text locator
-    @FindBy (xpath = "//*[text()='Computer Science`]")
+    @FindBy (xpath = "//*[text()='Computer Science']")
     public WebElement computerScienceText;
 
 

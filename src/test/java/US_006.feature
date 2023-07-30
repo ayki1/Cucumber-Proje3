@@ -22,8 +22,15 @@ Feature: US_006 Course sayfasına yönlendirdiği doğrulanır
 
   Scenario: 3-Course sayfasındaki başlıkların altında ilgili kursun detaylı bilgisine erişim için details butonlarının olduğu doğrulanır.
 
-    Given kullanıcı Course   görür
-    And kullanıcı   görür
+    Given kullanıcı Course sayfasinda  English and Literature DETAILS Butonunu görür
+    And kullanıcı Mathematics DETAILS Butonunu görür
+    And kullanıcı Sciences DETAILS Butonunu görür
+    And  kullanıcıSocial Sciences DETAILS Butonunu görür
+    And kullanıcı History DETAILS Butonunu görür
+    And kullanıcı Arts and Music DETAILS Butonunu görür
+    And kullanıcıHealth and Exercise Sciences DETAILS Butonunu görür
+    And kullanıcı Foreign Language DETAILS Butonunu görür
+    Then kullanıcı Computer Science DETAILS Butonunu görür
 
   Scenario: 4-Course details butonuna
     Given  Course detail  görür

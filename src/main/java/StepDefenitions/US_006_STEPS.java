@@ -104,14 +104,59 @@ public class US_006_STEPS {
         System.out.println("computerScienceText = " + us_006_coursePage.computerScienceText.getText());
     }
 
-    @Given("kullanıcı Course   görür")
-    public void kullanıcı_course_görür() {
 
+    @Given("kullanıcı Course sayfasinda  English and Literature DETAILS Butonunu görür")
+    public void kullanıcı_course_sayfasinda_english_and_literature_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
-    @Given("kullanıcı   görür")
-    public void kullanıcı_görür() {
+    @Given("kullanıcı Mathematics DETAILS Butonunu görür")
+    public void kullanıcı_mathematics_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
 
+    @Given("kullanıcı Sciences DETAILS Butonunu görür")
+    public void kullanıcı_sciences_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("kullanıcıSocial Sciences DETAILS Butonunu görür")
+    public void kullanıcı_social_sciences_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("kullanıcı History DETAILS Butonunu görür")
+    public void kullanıcı_history_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("kullanıcı Arts and Music DETAILS Butonunu görür")
+    public void kullanıcı_arts_and_music_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("kullanıcıHealth and Exercise Sciences DETAILS Butonunu görür")
+    public void kullanıcı_health_and_exercise_sciences_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("kullanıcı Foreign Language DETAILS Butonunu görür")
+    public void kullanıcı_foreign_language_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Then("kullanıcı Computer Science DETAILS Butonunu görür")
+    public void kullanıcı_computer_science_details_butonunu_görür() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
     @Given("Course detail  görür")
