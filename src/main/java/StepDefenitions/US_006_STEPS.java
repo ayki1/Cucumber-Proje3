@@ -1,14 +1,12 @@
 package StepDefenitions;
 
 import PageObjectModel.HomePage;
-import PageObjectModel.US_006_CoursePage;
-import io.cucumber.java.en.And;
+import PageObjectModel.US006_CoursePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
@@ -16,13 +14,13 @@ import java.util.concurrent.TimeUnit;
 public class US_006_STEPS {
 
     HomePage homePage=new HomePage();
-    US_006_CoursePage us_006_coursePage=new US_006_CoursePage();
+    US006_CoursePage us_006_coursePage=new US006_CoursePage();
     private WebDriver driver;
 
     @Given("Browser acilir.")
     public void browser_acilir() {
         driver= Driver.getDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
     }
@@ -51,7 +49,7 @@ public class US_006_STEPS {
 
     @Given("kullanıcı Course sayfasinda  English and Literature başlığını görür")
     public void kullanıcı_course_sayfasinda_english_and_literature_başlığını_görür() {
-
+        System.out.println("---------Course sayfasında  Bolum başlıklar asagi yazdirilacak-----------");
         Assert.assertTrue(us_006_coursePage.englishandLiteratureText.isDisplayed());
         System.out.println("englishandLiteratureText = " + us_006_coursePage.englishandLiteratureText.getText());
     }
@@ -107,66 +105,113 @@ public class US_006_STEPS {
 
     @Given("kullanıcı Course sayfasinda  English and Literature DETAILS Butonunu görür")
     public void kullanıcı_course_sayfasinda_english_and_literature_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        System.out.println("---------Course sayfasında  Bolum DETAILS BUTON başlıklari asagi yazdirilacak-----------");
+        Assert.assertTrue(us_006_coursePage.englishandLiteratureDetailsBtn.isDisplayed());
+        System.out.println("englishandLiteratureDetailsBtntext = " + us_006_coursePage.englishandLiteratureDetailsBtn.getText());
     }
 
     @Given("kullanıcı Mathematics DETAILS Butonunu görür")
     public void kullanıcı_mathematics_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(us_006_coursePage.mathematicsDetailsBtn.isDisplayed());
+        System.out.println("mathematicsDetailsBtntext = " + us_006_coursePage.mathematicsDetailsBtn.getText());
     }
 
     @Given("kullanıcı Sciences DETAILS Butonunu görür")
     public void kullanıcı_sciences_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(us_006_coursePage.sciencesDetailsBtn.isDisplayed());
+        System.out.println("sciencesDetailsBtntxt = " + us_006_coursePage.sciencesDetailsBtn.getText());
+
     }
 
-    @Given("kullanıcıSocial Sciences DETAILS Butonunu görür")
+    @Given("kullanıcı Social Sciences DETAILS Butonunu görür")
     public void kullanıcı_social_sciences_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+        Assert.assertTrue(us_006_coursePage.socialSciencesDetailsBtn.isDisplayed());
+        System.out.println("socialSciencesDetailsBtntxt = " + us_006_coursePage.socialSciencesDetailsBtn.getText());
 
+    }
     @Given("kullanıcı History DETAILS Butonunu görür")
     public void kullanıcı_history_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(us_006_coursePage.historyDetailsBtn.isDisplayed());
+        System.out.println("historyDetailsBtntxt = " + us_006_coursePage.historyDetailsBtn.getText());
+
     }
 
     @Given("kullanıcı Arts and Music DETAILS Butonunu görür")
     public void kullanıcı_arts_and_music_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(us_006_coursePage.artandMusicDetailsBtn.isDisplayed());
+        System.out.println("artandMusicDetailsBtntxt = " + us_006_coursePage.artandMusicDetailsBtn.getText());
+
     }
 
-    @Given("kullanıcıHealth and Exercise Sciences DETAILS Butonunu görür")
+    @Given("kullanıcı Health and Exercise Sciences DETAILS Butonunu görür")
     public void kullanıcı_health_and_exercise_sciences_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(us_006_coursePage.healthandExercicesSciencesBtn.isDisplayed());
+        System.out.println("healthandExercicesSciencesBtnTxt = " + us_006_coursePage.healthandExercicesSciencesBtn.getText());
     }
 
     @Given("kullanıcı Foreign Language DETAILS Butonunu görür")
     public void kullanıcı_foreign_language_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(us_006_coursePage.foreignLanguageDetailsBtn.isDisplayed());
+        System.out.println("foreignLanguageDetailsBtnTxt = " + us_006_coursePage.foreignLanguageDetailsBtn.getText());
     }
 
     @Then("kullanıcı Computer Science DETAILS Butonunu görür")
     public void kullanıcı_computer_science_details_butonunu_görür() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(us_006_coursePage.computerScienceDetailsBtn.isDisplayed());
+        System.out.println("computerScienceDetailsBtnTxt = " + us_006_coursePage.computerScienceDetailsBtn.getText());
     }
 
-    @Given("Course detail  görür")
-    public void course_detail_görür() {
-
+    @Given("kullanıcı Course sayfasinda English and Literature detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_course_sayfasinda_english_and_literature_detay_sayfasına_erişilebildiği_doğrulanır() {
+        System.out.println("---------Course sayfasında details butonuna tıklanınca ilgili kursun detay sayfasında Kurs başlıklari asagi yazdirilacak-----------");
+        us_006_coursePage.englishandLiteratureDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.englishandLiteratureTitle.isDisplayed());
+        System.out.println("englishandLiteratureTitle = " + us_006_coursePage.englishandLiteratureTitle.getText());
     }
 
-    @Given("kullanıcı  başlığını görür")
-    public void kullanıcı_başlığını_görür() {
+    @Given("kullanıcı Mathematics detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_mathematics_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
 
+    @Given("kullanıcı Sciences detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_sciences_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
+
+    @Given("kullanıcı Social Sciences detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_social_sciences_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
+
+    @Given("kullanıcı History detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_history_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
+
+    @Given("kullanıcı Arts and Music detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_arts_and_music_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
+
+    @Given("kullanıcı Health and Exercise Sciences detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_health_and_exercise_sciences_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
+
+    @Given("kullanıcı Foreign Language detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_foreign_language_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
+
+    @Then("kullanıcı Computer Science detay sayfasına erişilebildiği doğrulanır.")
+    public void kullanıcı_computer_science_detay_sayfasına_erişilebildiği_doğrulanır() {
+        //
+    }
+
+    @Then("Browser Sayfa kapanir")
+    public void browser_sayfa_kapanir() {
+        //
     }
 
     @Given("Sayfa kapanir")
