@@ -1,4 +1,5 @@
-Feature: US_008 Anasayfada Acheivements text Başlığı altında Acheivements bölümü görüntülenmeli.
+Feature: US_008 Anasayfada Acheivements text Başlığı altında Acheivements bölümü
+  görüntülenmeli.
 
   Scenario: 1-Ana sayfada Acheivements bölümü görüntülenmeli.
 

@@ -177,7 +177,7 @@ public class US_006_STEPS {
         Assert.assertTrue(us_006_coursePage.mathematicsTitle.isDisplayed());
         System.out.println("mathematicsTitle = " + us_006_coursePage.mathematicsTitle.getText());
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @Given("kullanıcı Sciences detay sayfasına erişilebildiği doğrulanır.")
@@ -186,7 +186,7 @@ public class US_006_STEPS {
         Assert.assertTrue(us_006_coursePage.sciencesTitle.isDisplayed());
         System.out.println("sciencesTitle = " + us_006_coursePage.sciencesTitle.getText());
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @Given("kullanıcı Social Sciences detay sayfasına erişilebildiği doğrulanır.")
@@ -195,7 +195,7 @@ public class US_006_STEPS {
         Assert.assertTrue(us_006_coursePage.socialSciencesTitle.isDisplayed());
         System.out.println("socialSciencesTitle = " + us_006_coursePage.socialSciencesTitle.getText());
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @Given("kullanıcı History detay sayfasına erişilebildiği doğrulanır.")
@@ -204,7 +204,7 @@ public class US_006_STEPS {
         Assert.assertTrue(us_006_coursePage.historyTitle.isDisplayed());
         System.out.println("historyTitle = " + us_006_coursePage.historyTitle.getText());
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @Given("kullanıcı Arts and Music detay sayfasına erişilebildiği doğrulanır.")
@@ -213,7 +213,7 @@ public class US_006_STEPS {
         Assert.assertTrue(us_006_coursePage.artandMusicTitle.isDisplayed());
         System.out.println("artandMusicTitle = " + us_006_coursePage.artandMusicTitle.getText());
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @Given("kullanıcı Health and Exercise Sciences detay sayfasına erişilebildiği doğrulanır.")
@@ -222,7 +222,7 @@ public class US_006_STEPS {
         Assert.assertTrue(us_006_coursePage.healthandExercicesSciencesTitle.isDisplayed());
         System.out.println("healthandExercicesSciencesTitle = " + us_006_coursePage.healthandExercicesSciencesTitle.getText());
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @Given("kullanıcı Foreign Language detay sayfasına erişilebildiği doğrulanır.")
@@ -231,7 +231,7 @@ public class US_006_STEPS {
         Assert.assertTrue(us_006_coursePage.foreignLanguageTitle.isDisplayed());
         System.out.println("foreignLanguageTitle = " + us_006_coursePage.foreignLanguageTitle.getText());
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
     }
 
     @Then("kullanıcı Computer Science detay sayfasına erişilebildiği doğrulanır.")
