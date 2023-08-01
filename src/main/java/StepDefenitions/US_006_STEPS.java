@@ -1,7 +1,7 @@
 package StepDefenitions;
 
-import PageObjectModel.HomePage;
-import PageObjectModel.US006_CoursePage;
+import Pages.HomePage;
+import Pages.US006_CoursePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -34,7 +34,7 @@ public class US_006_STEPS {
     @When("Ana sayfadaki üst menüde Course başlığına tıklanır")
     public void ana_sayfadaki_üst_menüde_course_başlığına_tıklanır() throws InterruptedException {
         homePage.courseButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     @Then("Course sayfasına yönlendirildiği doğrulanır")
@@ -44,7 +44,7 @@ public class US_006_STEPS {
         String actualTitle = driver.getTitle();
 
         Assert.assertEquals(actualTitle, expectedTitle);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
     }
 
     @Given("kullanıcı Course sayfasinda  English and Literature başlığını görür")
@@ -162,63 +162,89 @@ public class US_006_STEPS {
     }
 
     @Given("kullanıcı Course sayfasinda English and Literature detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_course_sayfasinda_english_and_literature_detay_sayfasına_erişilebildiği_doğrulanır() {
+    public void kullanıcı_course_sayfasinda_english_and_literature_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
         System.out.println("---------Course sayfasında details butonuna tıklanınca ilgili kursun detay sayfasında Kurs başlıklari asagi yazdirilacak-----------");
         us_006_coursePage.englishandLiteratureDetailsBtn.click();
         Assert.assertTrue(us_006_coursePage.englishandLiteratureTitle.isDisplayed());
         System.out.println("englishandLiteratureTitle = " + us_006_coursePage.englishandLiteratureTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Given("kullanıcı Mathematics detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_mathematics_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_mathematics_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.mathematicsDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.mathematicsTitle.isDisplayed());
+        System.out.println("mathematicsTitle = " + us_006_coursePage.mathematicsTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Given("kullanıcı Sciences detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_sciences_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_sciences_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.sciencesDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.sciencesTitle.isDisplayed());
+        System.out.println("sciencesTitle = " + us_006_coursePage.sciencesTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Given("kullanıcı Social Sciences detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_social_sciences_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_social_sciences_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.socialSciencesDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.socialSciencesTitle.isDisplayed());
+        System.out.println("socialSciencesTitle = " + us_006_coursePage.socialSciencesTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Given("kullanıcı History detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_history_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_history_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.historyDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.historyTitle.isDisplayed());
+        System.out.println("historyTitle = " + us_006_coursePage.historyTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Given("kullanıcı Arts and Music detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_arts_and_music_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_arts_and_music_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.artandMusicDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.artandMusicTitle.isDisplayed());
+        System.out.println("artandMusicTitle = " + us_006_coursePage.artandMusicTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Given("kullanıcı Health and Exercise Sciences detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_health_and_exercise_sciences_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_health_and_exercise_sciences_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.healthandExercicesSciencesBtn.click();
+        Assert.assertTrue(us_006_coursePage.healthandExercicesSciencesTitle.isDisplayed());
+        System.out.println("healthandExercicesSciencesTitle = " + us_006_coursePage.healthandExercicesSciencesTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Given("kullanıcı Foreign Language detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_foreign_language_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_foreign_language_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.foreignLanguageDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.foreignLanguageTitle.isDisplayed());
+        System.out.println("foreignLanguageTitle = " + us_006_coursePage.foreignLanguageTitle.getText());
+        homePage.courseButton.click();
+        Thread.sleep(2000);
     }
 
     @Then("kullanıcı Computer Science detay sayfasına erişilebildiği doğrulanır.")
-    public void kullanıcı_computer_science_detay_sayfasına_erişilebildiği_doğrulanır() {
-        //
+    public void kullanıcı_computer_science_detay_sayfasına_erişilebildiği_doğrulanır() throws InterruptedException {
+        us_006_coursePage.computerScienceDetailsBtn.click();
+        Assert.assertTrue(us_006_coursePage.computerScienceTitle.isDisplayed());
+        System.out.println("computerScienceTitle = " + us_006_coursePage.computerScienceTitle.getText());
     }
 
     @Then("Browser Sayfa kapanir")
     public void browser_sayfa_kapanir() {
-        //
-    }
-
-    @Given("Sayfa kapanir")
-    public void sayfa_kapanir() {
         Driver.closeDriver();
     }
-
 
 
 }
