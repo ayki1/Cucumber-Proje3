@@ -50,7 +50,4 @@ public class HomePage {
     public WebElement STUDENTS_sayisi;
 
 
-
-
-
 }
